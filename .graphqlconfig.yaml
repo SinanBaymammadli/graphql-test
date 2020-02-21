@@ -1,0 +1,11 @@
+projects:
+  blog-graphql:
+    schemaPath: src/prisma/schema.graphql
+    extensions:
+      endpoints:
+        dev: 'https://eu1.prisma.sh/sinanbaymammadli-c8fd1d/blog-graphql/dev'
+      codegen:
+        - generator: prisma-binding
+          language: typescript
+          output:
+            binding: src/prisma/prisma.binding.ts
